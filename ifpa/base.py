@@ -22,7 +22,4 @@ def _get(api_key, endpoint, url=URL, params={}, raw_response=False, acceptable_r
             raise Exception(f"response code not in [{','.join([str(a) for a in acceptable_returns])}]")
 
         return resp.json()
-    data = r.json()
-    logger.debug(f"{url = }")
 
-    return data

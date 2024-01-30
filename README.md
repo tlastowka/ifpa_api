@@ -42,7 +42,8 @@ print(single_function)
 
 Either will produce the same output.  Something like this:
 
-```{'player': {'age': 52,
+```
+{'player': {'age': 52,
             'city': 'Carlsbad',
             'country_code': 'US',
             'country_name': 'United States',

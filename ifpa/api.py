@@ -66,22 +66,22 @@ class IfpaApi():
                       *args, **kwargs)
 
     def stats_points_this_year(self, request_params={}, *args, **kwargs):
-        return stats_points_this_year(self.api_key, request_params=request_params, raw_response=None, *args ** kwargs)
+        return stats_points_this_year(self.api_key, request_params=request_params, raw_response=None, *args, **kwargs)
 
     def stats_most_events(self, request_params={}, *args, **kwargs):
-        return stats_most_events(self.api_key, request_params=request_params, raw_response=None, *args ** kwargs)
+        return stats_most_events(self.api_key, request_params=request_params, raw_response=None, *args, **kwargs)
 
     def stats_country_players(self, request_params={}, *args, **kwargs):
-        return stats_country_players(self.api_key, request_params=request_params, raw_response=None, *args ** kwargs)
+        return stats_country_players(self.api_key, request_params=request_params, raw_response=None, *args, **kwargs)
 
     def stats_events_by_year(self, request_params={}, *args, **kwargs):
-        return stats_events_by_year(self.api_key, request_params=request_params, raw_response=None, *args ** kwargs)
+        return stats_events_by_year(self.api_key, request_params=request_params, raw_response=None, *args, **kwargs)
 
     def stats_players_by_year(self, request_params={}, *args, **kwargs):
-        return stats_players_by_year(self.api_key, request_params=request_params, raw_response=None, *args ** kwargs)
+        return stats_players_by_year(self.api_key, request_params=request_params, raw_response=None, *args, **kwargs)
 
     def stats_biggest_movers(self, request_params={}, *args, **kwargs):
-        return stats_biggest_movers(self.api_key, request_params=request_params, raw_response=None, *args ** kwargs)
+        return stats_biggest_movers(self.api_key, request_params=request_params, raw_response=None, *args, **kwargs)
 
     def tournament(self, tournament_id, request_params={}, *args, **kwargs):
         return tournament(self.api_key, tournament_id, request_params=request_params, raw_response=None, *args,
@@ -96,7 +96,7 @@ class IfpaApi():
                                   request_params={}, *args, **kwargs)
 
     def tournament_list(self, request_params={}, *args, **kwargs):
-        return tournament_list(self.api_key, request_params=request_params, raw_response=None, *args ** kwargs)
+        return tournament_list(self.api_key, request_params=request_params, raw_response=None, *args, **kwargs)
 
     def tournament_search(self, q, request_params={}, *args, **kwargs):
         request_params['q'] = q

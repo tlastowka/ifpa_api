@@ -8,3 +8,4 @@ from .pvp import *
 from .rankings import *
 from .statistics import *
 from .tournament import *
+from .api import IfpaApi

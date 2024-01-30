@@ -60,7 +60,7 @@ class IfpaApi():
         return pvp(self.api_key, p1, p2, request_params=request_params, raw_response=None, *args, **kwargs)
 
     def rankings(self, start_pos=None, count=None, order=None, request_params={}, *args, **kwargs):
-        
+
         return rankings(self.api_key, start_pos=None, count=None, raw_response=None, order=None, request_params={},
                       *args, **kwargs)
 

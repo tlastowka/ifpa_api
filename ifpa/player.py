@@ -32,7 +32,7 @@ def player_pvp(api_key, player_id, request_params={}, *args, **kwargs):
     GET player/{player_id}/pvp
 
     Get player comparisons for a specific player, at a high level. Note that
-					this only brings back data if the player has played someone more than twice.
+    this only brings back data if the player has played someone more than twice.
     """
 
     url = f"""player/{player_id}/pvp"""

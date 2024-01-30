@@ -85,7 +85,11 @@ class IfpaApi():
                           **kwargs)
 
     def tournament_results(self, tournament_id, event_id=None, tour_date=None, request_params={}, *args, **kwargs):
-        return tournament_results(self.api_key, tournament_id, event_id=None, raw_response=None, tour_date=None,
+        if event_id:
+            request_params['event_id'] = event_id
+        if tour_date:
+            request_params['tour_date'] = tour_date
+        return tournament_results(self.api_key, tournament_id, raw_response=None,
                                   request_params={}, *args, **kwargs)
 
     def tournament_list(self, request_params={}, *args, **kwargs):

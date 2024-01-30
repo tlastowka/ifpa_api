@@ -13,11 +13,10 @@ There's some undocumented functions within the API but they aren't in here.
 
 There's also constant rumors API v2 is coming sometime between now and forever. 
 
-I've tested enough for my own scripts but most of these functions haven't been tested yet.
+I've fixed a bunch and tested enough for my own scripts but many haven't been tested yet.  If you find a bug let me know and I'll see about fixing it.
 
 USE AT YOUR OWN RISK.
 
-If you find a bug let me know and I'll see about fixing it.
 
 You can import and call individual functions or invoke the full client.
 They return the same output.  Check the API docs to find out about all the functions.

@@ -48,7 +48,8 @@ class IfpaApi():
                              **kwargs)
 
     def player_country_directors(self, request_params={}, *args, **kwargs):
-        return player_country_directors(self.api_key, request_params=request_params, raw_response=None, *args ** kwargs)
+
+        return player_country_directors(self.api_key, request_params=request_params, raw_response=None, *args, **kwargs)
 
     def player_history(self, player_id, request_params={}, *args, **kwargs):
         return player_history(self.api_key, player_id, request_params=request_params, raw_response=None, *args,

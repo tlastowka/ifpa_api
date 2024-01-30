@@ -21,32 +21,32 @@ class IfpaApi():
                     **kwargs)
 
     def calendar_history(self, country=None, request_params={}, *args, **kwargs):
-        return calendar_history(self.api_key, country=None, request_params={}, raw_response=None, *args, **kwargs)
+        return calendar_history(self.api_key, country=None, request_params=request_params, raw_response=None, *args, **kwargs)
 
     def calendar(self, calendar_id, request_params={}, *args, **kwargs):
-        return calendar(self.api_key, calendar_id, request_params={}, raw_response=None, *args, **kwargs)
+        return calendar(self.api_key, calendar_id, request_params=request_params, raw_response=None, *args, **kwargs)
 
     def calendar_search(self, address=None, m=None, k=None, request_params={}, *args, **kwargs):
         return calendar_search(self.api_key, address=None, m=None, raw_response=None, k=None, request_params={}, *args,
                                **kwargs)
 
     def player(self, player_id, request_params={}, *args, **kwargs):
-        return player(self.api_key, player_id, request_params={}, raw_response=None, *args, **kwargs)
+        return player(self.api_key, player_id, request_params=request_params, raw_response=None, *args, **kwargs)
 
     def player_results(self, player_id, request_params={}, *args, **kwargs):
-        return player_results(self.api_key, player_id, request_params={}, raw_response=None, *args, **kwargs)
+        return player_results(self.api_key, player_id, request_params=request_params, raw_response=None, *args, **kwargs)
 
     def player_pvp(self, player_id, request_params={}, *args, **kwargs):
-        return player_pvp(self.api_key, player_id, request_params={}, raw_response=None, *args, **kwargs)
+        return player_pvp(self.api_key, player_id, request_params=request_params, raw_response=None, *args, **kwargs)
 
     def player_search(self, q, email=None, request_params={}, *args, **kwargs):
-        return player_search(self.api_key, q, email=None, raw_response=None, request_params={}, *args, **kwargs)
+        return player_search(self.api_key, q, email=email, raw_response=None, request_params={}, *args, **kwargs)
 
     def player_country_directors(self, request_params={}, *args, **kwargs):
         return player_country_directors(self.api_key, request_params={}, *args, raw_response=None, **kwargs)
 
     def player_history(self, player_id, request_params={}, *args, **kwargs):
-        return player_history(self.api_key, player_id, request_params={}, raw_response=None, *args, **kwargs)
+        return player_history(self.api_key, player_id, request_params=request_params, raw_response=None, *args, **kwargs)
 
     def pvp(self, p1, p2, request_params={}, *args, **kwargs):
         return pvp(self.api_key, p1, p2, raw_response=None, request_params={}, *args, **kwargs)
@@ -74,7 +74,7 @@ class IfpaApi():
         return stats_biggest_movers(self.api_key, request_params={}, *args, raw_response=None, **kwargs)
 
     def tournament(self, tournament_id, request_params={}, *args, **kwargs):
-        return tournament(self.api_key, tournament_id, request_params={}, raw_response=None, *args, **kwargs)
+        return tournament(self.api_key, tournament_id, request_params=request_params, raw_response=None, *args, **kwargs)
 
     def tournament_results(self, tournament_id, event_id=None, tour_date=None, request_params={}, *args, **kwargs):
         return tournament_results(self.api_key, tournament_id, event_id=None, raw_response=None, tour_date=None,
@@ -84,4 +84,4 @@ class IfpaApi():
         return tournament_list(self.api_key, request_params={}, *args, raw_response=None, **kwargs)
 
     def tournament_search(self, q, request_params={}, *args, **kwargs):
-        return tournament_search(self.api_key, q, request_params={}, raw_response=None, *args, **kwargs)
+        return tournament_search(self.api_key, q, request_params=request_params, raw_response=None, *args, **kwargs)

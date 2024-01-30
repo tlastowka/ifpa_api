@@ -1,4 +1,4 @@
-###Python interface to the IFPA API
+Python interface to the IFPA API
 
 I had a bunch disorganized one off scripts I use to query the IFPA api a bunch of different ways that I was tired of keeping track of so I made a single client.
 
@@ -22,7 +22,7 @@ If you find a bug let me know and I'll see about fixing it.
 You can import and call individual functions or invoke the full client.
 They return the same output.  Check the API docs to find out about all the functions.
 
-#via a client
+via a client
 ```
 from ifpa.api import IfpaApi
 IFPA_API_KEY = "GET_YOUR_OWN_KEY"
@@ -32,8 +32,7 @@ print(client_call)
 
 ```
 
-#via a single function
-
+via a single function
 ```
 from ifpa.player import player
 IFPA_API_KEY = "GET_YOUR_OWN_KEY"

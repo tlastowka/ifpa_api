@@ -43,35 +43,5 @@ print(single_function)
 Either will produce the same output.  Something like this:
 
 ```
-{'player': {'age': 52,
-            'city': 'Carlsbad',
-            'country_code': 'US',
-            'country_name': 'United States',
-            'excluded_flag': 'N',
-            'first_name': 'Keith',
-            'gender': 'male',
-            'ifpa_registered': 'Y',
-            'initials': 'KME',
-            'last_name': 'Elwin',
-            'player_id': '1',
-            'state': 'CA'},
- 'player_stats': {'average_finish': '6',
-                  'average_finish_last_year': '11',
-                  'best_finish': '1',
-                  'best_finish_count': '87',
-                  'current_wppr_rank': '19',
-                  'current_wppr_value': '1410.42',
-                  'efficiency_rank': '95',
-                  'efficiency_value': '60.520',
-                  'highest_rank': '1',
-                  'highest_rank_date': '2017-04-01',
-                  'last_month_rank': '18',
-                  'last_year_rank': '25',
-                  'ratings_rank': '7',
-                  'ratings_value': '1988.32',
-                  'total_active_events': '24',
-                  'total_events_all_time': '290',
-                  'total_events_away': '4',
-                  'wppr_points_all_time': '9563.98'}}
 {'player': {'player_id': '1', 'first_name': 'Keith', 'last_name': 'Elwin', 'gender': 'male', 'city': 'Carlsbad', 'state': 'CA', 'country_code': 'US', 'country_name': 'United States', 'initials': 'KME', 'age': 52, 'excluded_flag': 'N', 'ifpa_registered': 'Y'}, 'player_stats': {'current_wppr_rank': '19', 'last_month_rank': '18', 'last_year_rank': '25', 'highest_rank': '1', 'highest_rank_date': '2017-04-01', 'current_wppr_value': '1410.42', 'wppr_points_all_time': '9563.98', 'best_finish': '1', 'best_finish_count': '87', 'average_finish': '6', 'average_finish_last_year': '11', 'total_events_all_time': '290', 'total_active_events': '24', 'total_events_away': '4', 'ratings_rank': '7', 'ratings_value': '1988.32', 'efficiency_rank': '95', 'efficiency_value': '60.520'}}
 ```

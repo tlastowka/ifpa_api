@@ -55,6 +55,8 @@ class IfpaApi():
                               **kwargs)
 
     def pvp(self, p1, p2, request_params={}, *args, **kwargs):
+        request_params['p1'] = p1
+        request_params['p2'] = p2
         return pvp(self.api_key, p1, p2, request_params=request_params, raw_response=None, *args, **kwargs)
 
     def rankings(self, start_pos=None, count=None, order=None, request_params={}, *args, **kwargs):

@@ -60,9 +60,9 @@ class IfpaApi():
         return pvp(self.api_key, p1, p2, request_params=request_params, raw_response=None, *args, **kwargs)
 
     def rankings(self, start_pos=None, count=None, order=None, request_params={}, *args, **kwargs):
-        raise Exception("NYI.  at some point")
-        # return rankings(self.api_key, start_pos=None, count=None, raw_response=None, order=None, request_params={},
-        #               *args, **kwargs)
+        
+        return rankings(self.api_key, start_pos=None, count=None, raw_response=None, order=None, request_params={},
+                      *args, **kwargs)
 
     def stats_points_this_year(self, request_params={}, *args, **kwargs):
         return stats_points_this_year(self.api_key, request_params=request_params, raw_response=None, *args ** kwargs)

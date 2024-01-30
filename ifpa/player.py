@@ -47,6 +47,9 @@ def player_search(api_key, q, email=None, request_params={}, *args, **kwargs):
     """
 
     url = f"""player/search"""
+    request_params['q'] = q
+    if email:
+        request_params['email'] = email
     return _get(api_key, url, params=request_params, *args, **kwargs)
 
 

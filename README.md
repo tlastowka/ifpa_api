@@ -1,3 +1,6 @@
+NOTE: It looks like they're massivley changing the API with a new swagger backend so this shouldn't be necessary once that stabilizes.
+
+
 Python interface to the IFPA API
 
 I had a bunch disorganized one off scripts I use to query the IFPA api a bunch of different ways that I was tired of keeping track of so I made a single client.
